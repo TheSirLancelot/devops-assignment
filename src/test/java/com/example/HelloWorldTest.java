@@ -12,7 +12,7 @@ class HelloWorldTest {
     void printsExpectedMessage() {
         PrintStream originalOut = System.out;
         ByteArrayOutputStream output = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(output));
+        System.setOut(new PrintStream(output, true, StandardCharsets.UTF_8));
         try {
             HelloWorld.main(new String[0]);
         } finally {
