@@ -19,6 +19,6 @@ class HelloWorldTest {
             System.setOut(originalOut);
         }
 
-        assertEquals("Hello from DevOps!" + System.lineSeparator(), output.toString(StandardCharsets.UTF_8));
+        assertEquals(HelloWorld.MESSAGE + System.lineSeparator(), output.toString(StandardCharsets.UTF_8));
     }
 }
